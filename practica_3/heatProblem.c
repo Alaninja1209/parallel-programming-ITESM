@@ -24,7 +24,7 @@ void heatEquation(){
     for(i = 0; i < 10; i++){
         for(j = 0; j < 6; j++){
             for(k = 0; j < 7; j++){
-                heatRoom[i + 1][j][k] = 0.02 *(heatRoom[i][j + 1][k] + heatRoom[i][j - 1][k] + heatRoom[i][j][k + 1] + heatRoom[i][j][k - 1] - 4*heatRoom[i][j][k]) + heatRoom[i][j][k];
+                heatRoom[i + 1][j][k] = 0.0625 *(heatRoom[i][j + 1][k] + heatRoom[i][j - 1][k] + heatRoom[i][j][k + 1] + heatRoom[i][j][k - 1] - 4*heatRoom[i][j][k]) + heatRoom[i][j][k];
             }
         }
     }
